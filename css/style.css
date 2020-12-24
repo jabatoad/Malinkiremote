@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -7,6 +8,7 @@
   vertical-align: baseline;
   background: transparent;
   box-sizing: border-box;
+  font-family: 'Poppins' , sans-serif;
 }
 /*Bootstrap*/
 .col-1 {width: 8.33%;}
@@ -24,26 +26,45 @@
 /*Main*/
 body {
   background-color: #f9f5f1;
+  font-family: Poppins;
 }
 .navbar {
   position: fixed;
   height: 100px;
-  top: 100px;
   background: #99E53F;
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
   border-radius: 5px;
 }
-.info-bar {
+.icons-block {
   position: absolute;
   height: 370px;
-  left: 0px;
-  top: 200px;
+  top: 100px;
+}
+.icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  padding-top: 30px;
+}
+.description {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+.icons-block img {
+  height: 130px;
+}
+.icons-block p {
+  width: 100px;
+  height: auto;
 }
 .slider-block {
   position: absolute;
   height: 506px;
   left: 0px;
-  top: 570px;
+  top: 500px;
   background: #99E53F;
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
@@ -74,4 +95,8 @@ body {
   background: #99E53F;
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
   border-radius: 5px;
+}
+img {
+  max-height: 50%;
+  max-width: 33.33%;
 }
