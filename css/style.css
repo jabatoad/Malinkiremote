@@ -31,33 +31,63 @@ body {
   height: 100%;
   width: 100%;
 }
+#sticky-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
 .header {
-  position: absolute;
   height: 100px;
   background: #99E53F;
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
   border-radius: 5px;
 }
-.header h2 {
+.logo-block {
   position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-left: 15px;
-  box-shadow: 10 10 10px rgba(0,0,0,0.3);
+  width: 262px;
+  height: 78px;
+  left: 180px;
+  top: 10px;
 }
-.nav {
-  float: right;
-  list-style: none;
-}
-.nav li {
-  display: inline-block;
-  padding-left: 20px;
+.schedule {
+  line-height: 10%;
+  height: 40px;
+  width: 200px;
+  font-size: 12px;
 }
 .icons-block {
   position: absolute;
   height: 370px;
   top: 200px;
+}
+.logo-block:hover {
+  cursor: pointer;
+}
+button {
+  border: none;
+  background-color: #99E53F;
+}
+nav {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+a {
+  text-decoration: none !important;
+  color: #000 !important;
+}
+.nav {
+  display: flex;
+  height: 100px;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 180px;
+}
+.nav-item {
+  font-size: 30px;
 }
 .icons {
   display: flex;
